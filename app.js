@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById('preloader').classList.add('loaded');
         initAnimations();
-    }, 2200);
+    }, 800);
 });
 
 // ==========================================
@@ -522,40 +522,40 @@ function initAnimations() {
 
     // Hero content entrance
     gsap.from('#hero .hero-badge', {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.8,
-        delay: 2.4
+        duration: 0.6,
+        delay: 0.1
     });
 
     gsap.from('#hero h1 .line', {
-        y: 60,
+        y: 40,
         opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        delay: 2.6,
+        duration: 0.8,
+        stagger: 0.12,
+        delay: 0.2,
         ease: 'power3.out'
     });
 
     gsap.from('.hero-subtitle', {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.8,
-        delay: 3.2
+        duration: 0.6,
+        delay: 0.4
     });
 
     gsap.from('.hero-actions', {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.8,
-        delay: 3.4
+        duration: 0.6,
+        delay: 0.5
     });
 
     gsap.from('.hero-stats', {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.8,
-        delay: 3.6
+        duration: 0.6,
+        delay: 0.6
     });
 
     // Timeline progress animation
